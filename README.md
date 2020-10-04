@@ -12,7 +12,7 @@ Myers-Briggs Type Indicator (MBTI) is one of the most prevalent personality test
 However, these tests often include intrinsic biases because the subject is conscious of the quiz processes and will answer accordingly. Therefore, we wanted to create a more objective process for testing MBTI. By inputting writing from the subject, we hope to train a machine learning model to predict his personality category through text analytics. Hopefully, this will eliminate input biases from the subject.
 
 ## Data Source
-The Myers Briggs Type Indicator (or MBTI for short) is a personality type system that divides everyone into 16 distinct personality types across 4 axis: 
+The Myers Briggs Type Indicator (or MBTI for short) is a personality type system that divides everyone into 16 distinct personality types across four axes: 
 - Introversion (I) – Extroversion (E) 
 - Intuition (N) – Sensing (S) 
 - Thinking (T) – Feeling (F) 
