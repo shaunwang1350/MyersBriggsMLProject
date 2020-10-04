@@ -55,8 +55,8 @@ Our main media of communication are currently:
 1.    Slack (Standard Communication)
 2.    Zoom (Meetings)
 3.    Individual phone numbers (Emergencies)
-· As our primary medium of communication, we will use Slack, where we will communicate our day-to-day logistics.
-· Our bi-weekly meetings, usually after 6PM ET, are organized through individual Zoom calls. This is where we will get connected, see everyone’s progress, and plan work for the upcoming few days.
+- As our primary medium of communication, we will use Slack, where we will communicate our day-to-day logistics.
+- Our bi-weekly meetings, usually after 6PM ET, are organized through individual Zoom calls. This is where we will get connected, see everyone’s progress, and plan work for the upcoming few days.
 - In case of emergency, we will call or text one another, depending on the urgency of the situation.
 
 ## Technologies Used
