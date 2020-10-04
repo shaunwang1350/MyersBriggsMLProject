@@ -10,10 +10,20 @@
 Myers-Briggs Type Indicator (MBTI) is one of the most prevalent personality tests in the world. Its purpose is to categorize psychological profiles based on the assumption that variations in everyday behavior are ordered, consistent, and capable of being categorized. Currently, the MBTI test is performed by an online quiz. However, these tests often include intrinsic biases because the subject is conscious of the quiz processes and will answer accordingly. Therefore, we wanted to create a more objective process for testing MBTI. By inputting writing from the subject, we hope to train a machine learning model to predict his personality category through text analytics. Hopefully, this will eliminate input biases from the subject.
 
 ## Data Source
-??? Davenel ???
+The Myers Briggs Type Indicator (or MBTI for short) is a personality type system that divides everyone into 16 distinct personality types across 4 axis: 
+- Introversion (I) – Extroversion (E) 
+- Intuition (N) – Sensing (S) 
+- Thinking (T) – Feeling (F) 
+- Judging (J) – Perceiving (P) 
+
+The dataset contains ~8600 observations (people), where each observation gives a person’s: 
+- Myers-Briggs personality type (as a 4-letter code) 
+- An excerpt containing the last 50 posts on their PersonalityCafe forum (each entry separated by “|||”) 
+
+This data was collected through the PersonalityCafe forum, as it provides a large selection of people and their MBTI personality type, as well as what they have written. 
 
 ## Questions to answer with the data
-- Explore and analyze the data to see if different personality group will have any difference in their writing style. These include:
+- Explore and analyze the data to see if any patterns can be detected in specific types and their style of writing, which overall explores the validity of the test in analysing, predicting or categorising behaviour. These include:
     - Length of the post (word count)
     - Length of average sentences (word count)
     - Use of stop words, punctuation (count)
