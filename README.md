@@ -3,8 +3,7 @@
 [![All Contributors](https://img.shields.io/badge/contributors-4-green.svg?style=flat-square)](#contributors-) ![Developement](https://img.shields.io/badge/progress-in%20development-orange)
 
 ## Topic and Background
-*The topic*
-??? Steven ???
+Personality
 
 *Reasons why we selected our topic:*
 
