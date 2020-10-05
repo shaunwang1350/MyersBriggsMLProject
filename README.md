@@ -9,7 +9,7 @@ Personality
 
 Myers-Briggs Type Indicator (MBTI) is one of the most prevalent personality tests in the world. Its purpose is to categorize psychological profiles based on the assumption that variations in everyday behavior are ordered, consistent, and capable of being categorized. Currently, the MBTI test is performed by an online quiz. 
 
-However, these tests often include intrinsic biases because the subject is conscious of the quiz processes and will answer accordingly. Therefore, we wanted to create a more objective process for testing MBTI. By inputting writing from the subject, we hope to train a machine learning model to predict his personality category through text analytics. Hopefully, this will eliminate input biases from the subject.
+However, these tests often include intrinsic biases because the subject is conscious of the quiz processes and will answer accordingly. Therefore, we wanted to create a more objective process for testing MBTI. By inputting writing from the subject, we hope to train a machine learning model to predict their personality category through text analytics. Hopefully, this will eliminate input biases from the subject.
 
 ## Data Source
 The Myers-Briggs Type Indicator (MBTI) is a taxonomy that divides everyone into 16 distinct personality types across four axes: 
