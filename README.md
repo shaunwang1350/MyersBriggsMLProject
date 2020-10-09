@@ -22,7 +22,7 @@ The dataset contains ~8600 observations (people), where each observation gives a
 - Myers-Briggs personality type (as a 4-letter code) 
 - An excerpt containing the last 50 posts on their PersonalityCafe forum (each entry separated by “|||”) 
 
-This data was collected through the PersonalityCafe forum, as it provides a large selection of people and their MBTI personality type, as well as what they have written. 
+This data was collected through the PersonalityCafe forum, as it provides a large selection of people and their MBTI personality types, as well as what they have written. 
 
 ## Questions to answer with the data
 - Explore and analyze the data to see if any patterns can be detected in specific types and their style of writing, which overall explores the validity of the test in analysing, predicting or categorising behaviour. These include:
