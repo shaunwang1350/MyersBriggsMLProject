@@ -36,11 +36,11 @@ This data was collected through the PersonalityCafe forum, as it provides a larg
 - We choose Random Forest model.
 - Random Forest model is a good fit for our data structure (tabular). It can produce a result much faster compared to Neural Network model. 
 - Among other model options, SVM is our second choice, but it requires the feature to be straight forward while ours is not. Logistics regression works well with a smaller dataset but our dataset will have thousands of features and observations. 
-- For learning purpose, we will also try out these model options and compare their accuracy.
+- For learning purposes, we will also try out these model options and compare their accuracy.
 
 *2. How to train the model*
 - We will use `train_test_split` to split the data into `X_train`, `X_test`, and `y_all_train`, `y_all_test`. 
-- `X_train` and `X_test` includes all the features
+- `X_train` and `X_test` include all the features
 - `y_all_train` and `y_all_test` include four columns of target label
 - When training, we will run the model four times. In each iteration, we will use the same `X_train` with one column (target) from the `y_all_train`. Running the model four times will generate four labels for each test observation. 
 
