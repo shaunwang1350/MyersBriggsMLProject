@@ -18,7 +18,7 @@ The Myers-Briggs Type Indicator (MBTI) is a taxonomy that divides everyone into 
 - Thinking (T) – Feeling (F) 
 - Judging (J) – Perceiving (P) 
 
-The dataset contains ~8600 observations (people), where each observation gives a person’s: 
+The dataset contains ~ 8,600 observations (people), where each observation gives a person’s: 
 - Myers-Briggs personality type (as a 4-letter code) 
 - An excerpt containing the last 50 posts on their PersonalityCafe forum (each entry separated by “|||”) 
 
@@ -45,15 +45,15 @@ This data was collected through the PersonalityCafe forum, as it provides a larg
 - When training, we will run the model four times. In each iteration, we will use the same `X_train` with one column (target) from the `y_all_train`. Running the model four times will generate four labels for each test observation. 
 
 *3. What are the target label(s)*
-- Each observation will have four initial labels, one from each of the below binary combination:
+- Each observation will have four initial labels, one from each of the following binaries:
     - "E-I"
     - "N-S"
     - "T-F"
     - "J-P"
-- Depending on the final presentation of the dashboard, we may either keep the four labels separate, or group together into 16 possible variations.
+- Depending on the final presentation of the dashboard, we may either keep the four labels separate or group them together into 16 possible variations.
 
 ## Objectives
-Our objectives are divided into four segments with 4 different contributor roles:
+Our objectives are divided into four segments with four different contributor roles:
 
 #### Segment 1:
 * Selected topic
