@@ -6,7 +6,7 @@ html, body {
     font-weight: lighter;
 }
 
-h1 {
+h1, h2 {
     color: rgb(73, 144, 161)
 }
 
