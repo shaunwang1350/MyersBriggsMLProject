@@ -1,4 +1,46 @@
-* {
-    background-color: black;
+html, body {
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+    background: rgb(38, 163, 194);
+    color: black;
+    font-weight: lighter;
+}
+
+.main-menu ul {
+    list-style: none;
+}
+  
+.main-menu ul li {
+    display: inline;
+    align-content: center;
+}
+  
+.main-menu ul li a {
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-right: 10px;
+    padding: 20px 0 5px;
+    text-decoration: none;
+}
+  
+.main-menu ul li a:hover {
+    display: inline-block;
+    font-size: 18px;
     color: white;
+    margin-left: 15px;
+    margin-right: 10px;
+    padding: 20px 0 5px;
+    text-decoration: none;
+}
+
+.title {
+    font-size: 80px;
+    font-weight: lighter
+}
+
+section {
+    padding: 5%
 }
