@@ -1,9 +1,13 @@
 html, body {
     height: 100%;
     font-family: Helvetica, sans-serif;
-    background: rgb(38, 163, 194);
+    background: rgb(255, 249, 238);
     color: black;
     font-weight: lighter;
+}
+
+h1 {
+    color: rgb(73, 144, 161)
 }
 
 .main-menu ul {
@@ -29,7 +33,7 @@ html, body {
 .main-menu ul li a:hover {
     display: inline-block;
     font-size: 18px;
-    color: white;
+    color: rgb(73, 144, 161);
     margin-left: 15px;
     margin-right: 10px;
     padding: 20px 0 5px;
