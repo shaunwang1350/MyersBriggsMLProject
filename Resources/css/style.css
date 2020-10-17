@@ -7,7 +7,7 @@ html, body {
 }
 
 h1, h2 {
-    color: rgb(73, 144, 161)
+    color: black;
 }
 
 .main-menu ul {
@@ -41,10 +41,16 @@ h1, h2 {
 }
 
 .title {
-    font-size: 80px;
-    font-weight: lighter
+    color: rgb(73, 144, 161);
+    font-size: 50px;
+    font-weight: bold;
 }
 
 section {
-    padding: 5%
+    padding: 10%
+}
+
+.disc{
+    font-size: 25px;
+    font-weight: normal;
 }
