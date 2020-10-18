@@ -32,11 +32,9 @@ This data was collected through the PersonalityCafe forum, as it provides a larg
 - Create a Machine Learning model that is able to predict the personality type based on the writing input
 
 ## Machine Leaning Model
-*1. Which model and why*
-- We choose Random Forest model.
-- Random Forest model is a good fit for our data structure (tabular). It can produce a result much faster compared to Neural Network model. 
-- Among other model options, SVM is our second choice, but it requires the feature to be straight forward while ours is not. Logistics regression works well with a smaller dataset but our dataset will have thousands of features and observations. 
-- For learning purposes, we will also try out these model options and compare their accuracy.
+*1. Which models*
+- We tried five different models, Logistics Regression, Neural Network, Random Forest, Linear SVC, LinearSVC with KBInsDiscretizer.
+- So far, the Linear SVC produced the best result in terms of f1-score and accuracy.
 
 *2. How to train the model*
 - We will use `train_test_split` to split the data into `X_train`, `X_test`, and `y_all_train`, `y_all_test`. 
@@ -50,7 +48,7 @@ This data was collected through the PersonalityCafe forum, as it provides a larg
     - "N-S"
     - "T-F"
     - "J-P"
-- Depending on the final presentation of the dashboard, we may either keep the four labels separate or group them together into 16 possible variations.
+
 
 ## Objectives
 Our objectives are divided into four segments with four different contributor roles:
@@ -149,6 +147,7 @@ Our main media of communication are currently:
 - In case of emergency, we will call or text one another, depending on the urgency of the situation.
 
 ## Technologies Used
+* PostgreSQL
 * Python (Pandas)
 * Sklearn
 * Bootstrap
@@ -156,24 +155,29 @@ Our main media of communication are currently:
 * JavaScript
 * HTML/CSS
 
-## Mock Data table:
+## Database setup:
+*AWS ADS*
+- Set up RDS instance on AWS, and connect it to PostgreSQL
 
-| 1 | 3 | 14 | 18 | 22 | 78 | 99 | 101 | E-I | N-S | T-F | J-P |
-|---|---|----|----|----|----|----|-----|-----|-----|-----|-----|
-| 0 | 0 | 0  | 0  | 0  | 0  | 0  | 0   | 1   | 0   | 1   | 1   |
-| 0 | 0 | 0  | 3  | 0  | 1  | 0  | 0   | 0   | 1   | 0   | 0   |
-| 1 | 0 | 2  | 0  | 0  | 0  | 3  | 2   | 1   | 0   | 1   | 1   |
-| 0 | 0 | 0  | 0  | 0  | 1  | 0  | 0   | 1   | 1   | 1   | 0   |
-| 0 | 0 | 0  | 1  | 0  | 2  | 0  | 0   | 0   | 1   | 0   | 1   |
+*Postgres* 
+- Create new server with RDS as the host.
+- Create SQL table and import data in csv format.
+
+*SQLAlchemy*
+- Set up connection with Postgres database.
+- Reads in the table as a Pandas Dataframe.
+
 
 ## Segment 2 Roles:
-During Segment 2, we seperated into different roles then what was asked from the rubic. We wanted to do this because our delegation of work fitted better to our workflow:
+During Segment 2, we seperated into different roles than what was asked from the rubic. We wanted to do this because our delegation of work fitted better to our workflow:
 
 **Davenel Denis:**
+* Managed data cleaning
 * Deployed Neural Net Model
 * Google Slides Research + Production
 
 **Jing Jin:**
+* Managed data analysis and EDA
 * Deployed Logistical Regression Model
 * Setup Database Connection
 * Managed Github branches
@@ -183,7 +187,15 @@ During Segment 2, we seperated into different roles then what was asked from the
 * Google Slides Research + Production
 
 **Shaun Wang:**
+* Set up AWS RDS
 * Deployed Random Forest Model
 * Deployed SVC Model
 * Began production of front-end HTML/CSS
 * Managed Github branches
+* Google Slides Research + Production
+
+
+## Presentation:
+* The PowerPoint contains a more detailed discussion of the project, data analysis, modeling and discussion.
+* This file can be accessed from [here]()
+
