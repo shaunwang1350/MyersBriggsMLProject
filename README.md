@@ -166,3 +166,24 @@ Our main media of communication are currently:
 | 0 | 0 | 0  | 0  | 0  | 1  | 0  | 0   | 1   | 1   | 1   | 0   |
 | 0 | 0 | 0  | 1  | 0  | 2  | 0  | 0   | 0   | 1   | 0   | 1   |
 
+## Segment 2 Roles:
+During Segment 2, we seperated into different roles then what was asked from the rubic. We wanted to do this because our delegation of work fitted better to our workflow:
+
+**Davenel Denis:**
+* Deployed Neural Net Model
+* Google Slides Research + Production
+
+**Jing Jin:**
+* Deployed Logistical Regression Model
+* Setup Database Connection
+* Managed Github branches
+* Google Slides Research + Production
+
+**Steven Walk:**
+* Google Slides Research + Production
+
+**Shaun Wang:**
+* Deployed Random Forest Model
+* Deployed SVC Model
+* Began production of front-end HTML/CSS
+* Managed Github branches
