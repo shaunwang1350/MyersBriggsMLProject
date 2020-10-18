@@ -1,3 +1,4 @@
+/Notebooks/DataPreprocessing/config.py
 /Resources/data
 
 # Byte-compiled / optimized / DLL files
@@ -129,3 +130,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# MacOs files
+.DS_Store
