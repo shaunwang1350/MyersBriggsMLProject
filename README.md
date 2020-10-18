@@ -5,7 +5,7 @@
 
 ## Presentation
 * The PowerPoint contains a more detailed discussion of the project, data analysis, modeling and the application.
-* This file can be accessed from [here]()
+* This file can be accessed from [here](https://docs.google.com/presentation/d/1k8EJ2QjWDDRVAvyqtfrXNY97UdiPusOJ8cjnyFdsfmk/edit?usp=sharing)
 
 ## Topic and Background
 Personality
