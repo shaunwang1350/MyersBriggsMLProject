@@ -168,19 +168,20 @@ Our main media of communication are currently:
 
 ## Segment 2 Roles:
 During Segment 2, we seperated into different roles then what was asked from the rubic. We wanted to do this because our delegation of work fitted better to our workflow:
-Davenel Denis:
+
+**Davenel Denis:**
 * Deployed Neural Net Model
 * Google Slides Research + Production
 
-Jing Jin:
+**Jing Jin:**
 * Deployed Logistical Regression Model
 * Setup Database Connection
 * Managed Github branches
 
-Steven Walk:
+**Steven Walk:**
 * Google Slides Research + Production
 
-Shaun Wang:
+**Shaun Wang:**
 * Deployed Random Forest Model
 * Deployed SVC Model
 * Began production of front-end HTML/CSS
