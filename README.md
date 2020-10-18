@@ -177,6 +177,7 @@ During Segment 2, we seperated into different roles then what was asked from the
 * Deployed Logistical Regression Model
 * Setup Database Connection
 * Managed Github branches
+* Google Slides Research + Production
 
 **Steven Walk:**
 * Google Slides Research + Production
