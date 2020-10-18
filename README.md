@@ -2,6 +2,11 @@
 
 [![All Contributors](https://img.shields.io/badge/contributors-4-green.svg?style=flat-square)](#contributors-) ![Developement](https://img.shields.io/badge/progress-in%20development-orange)
 
+
+## Presentation
+* The PowerPoint contains a more detailed discussion of the project, data analysis, modeling and the application.
+* This file can be accessed from [here]()
+
 ## Topic and Background
 Personality
 
@@ -195,7 +200,5 @@ During Segment 2, we seperated into different roles than what was asked from the
 * Google Slides Research + Production
 
 
-## Presentation:
-* The PowerPoint contains a more detailed discussion of the project, data analysis, modeling and discussion.
-* This file can be accessed from [here]()
+
 
