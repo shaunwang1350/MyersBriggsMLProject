@@ -60,7 +60,8 @@ Our objectives are divided into four segments with four different contributor ro
 
 #### Segment 1:
 * Selected topic
-* Reason why they selected their topic ✓ Description of their source of data
+* Reason why they selected their topic 
+* Description of their data source
 * Questions they hope to answer with the data
 * README.md: Description of the communication protocols
 * At least one branch for each team member
