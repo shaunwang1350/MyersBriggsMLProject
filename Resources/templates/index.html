@@ -39,7 +39,7 @@
         <div class="container">
             <!-- <div class="col-md-12"> -->
                 <h2>Get your personality test:</h2>
-                <form>
+                <form action="{{ url_for('predict')}}"method="post">
                     <div class="form-group w-75">
                         <textarea type="text" class="form-control" id="example4" placeholder="User Sample Text" rows=10 cols=150></textarea>
                       </div>
