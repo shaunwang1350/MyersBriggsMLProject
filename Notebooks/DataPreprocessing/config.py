@@ -1,1 +1,0 @@
-db_password = 'Bootcamp1234'

@@ -1,4 +1,7 @@
-/Notebooks/DataPreprocessing/config.py
+/Notebooks/Master_notebook/config.py
+/Notebooks/Master_notebook/__pycache__
+/Resources/vectorizer
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
