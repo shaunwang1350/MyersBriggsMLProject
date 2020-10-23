@@ -1,9 +1,5 @@
 /Notebooks/DataPreprocessing/config.py
 
-/Resources/data/
-
-/Resources/vectorizer/
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
