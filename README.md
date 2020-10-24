@@ -208,5 +208,9 @@ During Segment 2, we seperated into different roles than what was asked from the
 ![FontEnd6](/Resources/mdImages/frontEnd/FrontEnd_6.png)
 ![FontEnd7](/Resources/mdImages/frontEnd/FrontEnd_7.png)
 
+![classImbalance](/Resources/mdImages/analysis/class_imbalance.png)
+![features](/Resources/mdImages/analysis/features.png)
+![typeCorr](/Resources/mdImages/analysis/type_corr.png)
+![typeCount](/Resources/mdImages/analysis/type_count.png)
 
 
