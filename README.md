@@ -200,6 +200,13 @@ During Segment 2, we seperated into different roles than what was asked from the
 * Managed Github branches
 * Google Slides Research + Production
 
+![FontEnd1](/Resources/mdImages/frontEnd/FrontEnd_1.png)
+![FontEnd2](/Resources/mdImages/frontEnd/FrontEnd_2.png)
+![FontEnd3](/Resources/mdImages/frontEnd/FrontEnd_3.png)
+![FontEnd4](/Resources/mdImages/frontEnd/FrontEnd_4.png)
+![FontEnd5](/Resources/mdImages/frontEnd/FrontEnd_5.png)
+![FontEnd6](/Resources/mdImages/frontEnd/FrontEnd_6.png)
+![FontEnd7](/Resources/mdImages/frontEnd/FrontEnd_7.png)
 
 
 
