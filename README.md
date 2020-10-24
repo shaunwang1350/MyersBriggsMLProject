@@ -215,6 +215,33 @@ During Segment 2, we seperated into different roles than what was asked from the
 * Managed Github branches
 * Google Slides Research + Production
 
+## Segment 3 Roles:
+During Segment 3, we seperated into different roles than what was asked from the rubic. We wanted to do this because our delegation of work fitted better to our workflow:
 
+**Davenel Denis:**
+* Developed Neural Net model
+* Updated Random Forest model with Resampling
+* Edited model comparison chart
+* Edited Slides
+
+**Jing Jin:**
+* Edited model comparison chart
+* Added Regex and additional model weights to app.py
+* Edited Slides
+* Managed Readme
+* Managed Github branches
+* Edited Slides 
+
+**Steven Walk:**
+* Edited Slides
+* Proofread Readme
+* Created marketing material
+
+**Shaun Wang:**
+* Developed and finalizedfront-end index.html through HTML/CSS/Flask
+* Developed app.py
+* Managed Readme
+* Managed Github branches / folder structures
+* Added resources to slides
 
 
