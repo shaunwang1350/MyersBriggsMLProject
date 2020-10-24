@@ -213,4 +213,6 @@ During Segment 2, we seperated into different roles than what was asked from the
 ![typeCorr](/Resources/mdImages/analysis/type_corr.png)
 ![typeCount](/Resources/mdImages/analysis/type_count.png)
 
+![appFlowChart](/Resources/mdImages/app_workflow.PNG)
+
 
