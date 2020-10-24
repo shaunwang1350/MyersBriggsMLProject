@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Machine Learning, Myers Briggs">
-    <link rel="stylesheet" href="Resources/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Myer Briggs ML Model</title>
 </head>
 <body>
@@ -39,12 +39,14 @@
         <div class="container">
             <!-- <div class="col-md-12"> -->
                 <h2>Get your personality test:</h2>
-                <form>
+                <form action="{{ url_for('predict')}}"method="post">
                     <div class="form-group w-75">
                         <textarea type="text" class="form-control" id="example4" placeholder="User Sample Text" rows=10 cols=150></textarea>
                       </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+                <h3>Your Result:</h3>
+                <div>{{prediction_text}}</div>
             <!-- </div> -->
         </div>
     </section>
