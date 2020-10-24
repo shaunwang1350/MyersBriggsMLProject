@@ -4,7 +4,7 @@
 
 
 ## Presentation
-* The PowerPoint contains a more detailed discussion of the project, data analysis, modeling and application.
+* The PowerPoint contains a more detailed discussion of the trials and errors of the machine learning models.
 * This file can be accessed [here](https://github.com/shaunwang1350/MyersBriggsMLProject/blob/master/MyersBriggsProject.pptx).
 
 ## Topic and Background
