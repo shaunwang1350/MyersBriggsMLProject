@@ -1,7 +1,8 @@
-/Notebooks/Master_notebook/config.py
-/Notebooks/Master_notebook/__pycache__
 /Resources/vectorizer
-
+/Notebooks/DataPreprocessing/config.py
+/Resources/data
+/Resources/model_weights
+/Resources/vectorizer
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
