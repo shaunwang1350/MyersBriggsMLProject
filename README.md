@@ -1,56 +1,117 @@
-# Myers Briggs Machine Learning Project
+# Myers-Briggs Machine Learning Project
 
 [![All Contributors](https://img.shields.io/badge/contributors-4-green.svg?style=flat-square)](#contributors-) ![Developement](https://img.shields.io/badge/progress-in%20development-orange)
 
 
 ## Presentation
-* The PowerPoint contains a more detailed discussion of the project, data analysis, modeling and the application.
-* This file can be accessed from [here](https://github.com/shaunwang1350/MyersBriggsMLProject/blob/master/MyersBriggsProject.pptx)
+* The PowerPoint contains a more detailed discussion of the project, data analysis, modeling and application.
+* This file can be accessed [here](https://github.com/shaunwang1350/MyersBriggsMLProject/blob/master/MyersBriggsProject.pptx).
 
 ## Topic and Background
 Personality
 
 *Reasons why we selected our topic:*
 
-Myers-Briggs Type Indicator (MBTI) is one of the most prevalent personality tests in the world. Its purpose is to categorize psychological profiles based on the assumption that variations in everyday behavior are ordered, consistent, and capable of being categorized. Currently, the MBTI test is performed by an online quiz. 
+Myers-Briggs Type Indicator (MBTI) is one of the most prevalent personality tests in psychology. Its purpose is to classify psychological profiles based on the assumption that variations in everyday behavior are ordered, consistent and capable of being categorized. Currently, the MBTI test is performed by an online quiz. 
 
-However, these tests often include intrinsic biases because the subject is conscious of the quiz processes and will answer accordingly. Therefore, we wanted to create a more objective process for testing MBTI. By inputting writing from the subject, we hope to train a machine learning model to predict their personality category through text analytics. Hopefully, this will eliminate input biases from the subject.
+However, these tests often include intrinsic biases because the subject is conscious of the quiz's processes and will answer accordingly. Therefore, we wanted to create a more objective process for testing MBTI. By inputting writing from the subject, we hope to train a machine learning model to predict their personality category through text analytics. Hopefully, this will eliminate input biases from the subject.
 
 ## Data Source
 The Myers-Briggs Type Indicator (MBTI) is a taxonomy that divides everyone into 16 distinct personality types across four axes: 
-- Introversion (I) – Extroversion (E) 
+- Introversion (I) – Extraversion (E) 
 - Intuition (N) – Sensing (S) 
 - Thinking (T) – Feeling (F) 
 - Judging (J) – Perceiving (P) 
 
 The dataset contains ~ 8,600 observations (people), where each observation gives a person’s: 
-- Myers-Briggs personality type (as a 4-letter code) 
-- An excerpt containing the last 50 posts on their PersonalityCafe forum (each entry separated by “|||”) 
+- Myers-Briggs personality type (as a 4-letter code)
+- An excerpt containing the last 50 posts on their PersonalityCafe forum (each entry separated by “|||”)
 
-This data was collected through the PersonalityCafe forum, as it provides a large selection of people and their MBTI personality types, as well as what they have written. 
+This data was collected from the PersonalityCafe forum, as it provides a large selection of people and their MBTI personality types, as well as what they have written. 
 
 ## Questions to answer with the data
-- Explore and analyze the data to see if any patterns can be detected in specific types and their style of writing, which overall explores the validity of the test in analysing, predicting or categorising behaviour. These include:
+- Explore and analyze the data to see if any patterns can be detected in specific personality types and their writing styles. This explores the validity of the test in analyzing, predicting and categorizing behavior. These include:
     - Length of the post (word count)
     - Length of average sentences (word count)
-    - Use of stop words, punctuation (count)
-- Create a Machine Learning model that is able to predict the personality type based on the writing input
+    - Use of stop words and punctuation (count)
+- Create a Machine Learning capable of predicting the user's personality type based on their writing input.
+
+## Tools and Technologies Used
+* PostgreSQL
+* AWS RDS
+* Python (Pandas)
+* Sklearn
+* Bootstrap
+* Flask
+* HTML/CSS
+
+## Database setup:
+*AWS ADS*
+- Set up RDS instance on AWS, and connect it to PostgreSQL
+
+*Postgres* 
+- Create new server with RDS as the host
+- Create SQL table and import data in .csv format
+
+*SQLAlchemy*
+- Set up connection with Postgres database
+- Reads in the table as a Pandas Dataframe
+
+## Exploratory Data Analysis //////// image link tbd after branch merge /////////
+*1. What does the data look like?*
+- A personality type count shows that the sample data is not very evenly distributed.
+- Four data types, INFJ, INFP, INTJ and INTP have considerably larger samples (more than 1,000) than ESFJ, ESFP, ESTJ and ESTP (fewer than 250).
+- The users from the forum tend to be IN?? type.
+
+![typeCount](/Resources/mdImages/analysis/type_count.png)
+
+*2. Are each dimensions balanced?*
+- Comparing the sample sizes within each of the four axes, we can see that the E-I and N-S axes have extremely imbalanced sample sizes.
 
 ![classImbalance](/Resources/mdImages/analysis/class_imbalance.PNG)
+
+
+*3. Does each group have some difference?*
+- We counted the use of urls, exclamation marks, question marks, word length and digits per post for each personality type.
+- The use of exclamation marks and http links differ slightly among the  groups. Other writing style counts tend to be fairly evenly distributed.
+
 ![features](/Resources/mdImages/analysis/features.PNG)
+
+
+*4. Are the four dimensions independent?*
+- There are 16 personality types, and this limits our choice of Machine Learning models. 
+- We proposed dividing the personality types into four axes (E-I, N-S, F-T and J-P).This way, our model only needs to output a binary result. This widened our selection of models considerably.
+- Before going forward, we need to test the assumption that each of the four axes is independent from the others.
+- A correlation matrix is produced, as shown in the figure on the left.
+- Overall, the correlations’ absolute values are < 0.2, indicating low correlation.
+
 ![typeCorr](/Resources/mdImages/analysis/type_corr.png)
-![typeCount](/Resources/mdImages/analysis/type_count.png)
+
+
+## Data Cleaning
+*1. What to clean up*
+- Used RegEx methodology to clean data that consisted of social media posts from over 8,000 unique identifiers with 50 posts each separated by 3 pipes ( ||| ). 
+- Reading the mood from text with ML is called “sentiment analysis.” However, before we could perform sentiment analysis, we had to create a column without the following: http strings; ||| strings; punctuation marks; underscores; numbers; one letter words; leftover white space. 
+- Then, we made everything lowercase. 
+
+*2. The balance of information and noise*
+- We decided that because we are trying to predict personality types, we wanted the text as similar to the actual writing as possible; this is part art and part science.
+- We then tokenized and performed TF-IDF vectorization for the cleaned text, and used all 17,000 features as model input. 
+
 
 ## Machine Leaning Model
 *1. Which models*
-- We tried five different models, Logistics Regression, Neural Network, Random Forest, Linear SVC, LinearSVC with KBInsDiscretizer.
-- So far, the Linear SVC produced the best result in terms of f1-score and accuracy.
+- We tried five different models: Logistics Regression; Neural Network; Random Forest; Linear SVC; LinearSVC with KBInsDiscretizer.
+- With further improvements, the Logistics Regression model produced the best result in terms of overall F1 score and accuracy.
 
 *2. How to train the model*
 - We will use `train_test_split` to split the data into `X_train`, `X_test`, and `y_all_train`, `y_all_test`. 
-- `X_train` and `X_test` include all the features
-- `y_all_train` and `y_all_test` include four columns of target label
-- When training, we will run the model four times. In each iteration, we will use the same `X_train` with one column (target) from the `y_all_train`. Running the model four times will generate four labels for each test observation. 
+- `X_train` and `X_test` include all 17,000 features that are vectorized from the cleaned text input.
+- `y_all_train` and `y_all_test` include four columns of target labels.
+- When training, we will run the model four times. In each iteration, we: 
+    - Resample the data for each dimention to solve the class imbalance issue.
+    - Use the resampled `X_train` with one column (target) from the `y_all_train`.
+    - Run the model four times to generate four labels for each test observation.
 
 *3. What are the target label(s)*
 - Each observation will have four initial labels, one from each of the following binaries:
@@ -59,27 +120,38 @@ This data was collected through the PersonalityCafe forum, as it provides a larg
     - "T-F"
     - "J-P"
 
+## The Application
+*1. Objective of the app*
+We want to let users try the model themselves by entering an example of their writing in the text box to receive a prediction of their personality type. 
+
+*2. The Front-end content*
+- A text box where the user can input their writing. For better accuracy, there is a minimum requirement of 150 characters.
+- A `predict` button to click on when the user is ready to view the result.
+- A background introduction of Myers-Briggs Type Indicators with the meaning of each dimension.
+- A brief bio of the creators and the background of this project.
+
+*3. The Back-end*
+- Workflow
+
 ![appFlowChart](/Resources/mdImages/app_workflow.PNG)
 
-## Communication Protocol
-Our main media of communication are currently: 
-1.    Slack (Standard Communication)
-2.    Zoom (Meetings)
-3.    Individual phone numbers (Emergencies)
-- As our primary medium of communication, we will use Slack, where we will communicate our day-to-day logistics.
-- Our bi-weekly meetings, usually after 6PM ET, are organized through individual Zoom calls. This is where we will get connected, see everyone’s progress, and plan work for the upcoming few days.
-- In case of emergency, we will call or text one another, depending on the urgency of the situation.
+- Model weights and other variables
+    - After running the logistics regression model, we used `pickle` to save the weights of our four models.
+    - Since we need to preprocess the user text input, we also needed to save the `vectorizer` variable.
+- Flask
+    - Import all four model weights and the `vectorizer` variable.
+    - Initiate a Flask app.
+    - Create a root route using our HTML template.
+    - Use a `POST` method to capture the user input in the text box.
+    - Apply regex cleaning and vectorize the text into features.
+    - Input the features into four models and get predicted results for four dimensions.
+    - Convert 1 & 0 binary results to corresponding personality type letters.
+    - Output the four dimensions back to the frontend in the result section.
+- HTML
+    - At the text box section, we included `<form action="{{ url_for('predict')}}" method="POST">` so it can be called from Flask.
+    - In the result section, we included `{{ prediction_text }}` so the prediction result can be reflected.
 
-## Technologies Used
-* PostgreSQL
-* Python (Pandas)
-* Sklearn
-* Bootstrap
-* Flask
-* JavaScript
-* HTML/CSS
-
-## Product MVP
+*4. A Preview*
 ![FontEnd1](/Resources/mdImages/frontEnd/FrontEnd_1.png)
 ![FontEnd2](/Resources/mdImages/frontEnd/FrontEnd_2.png)
 ![FontEnd3](/Resources/mdImages/frontEnd/FrontEnd_3.png)
@@ -88,132 +160,28 @@ Our main media of communication are currently:
 ![FontEnd6](/Resources/mdImages/frontEnd/FrontEnd_6.png)
 ![FontEnd7](/Resources/mdImages/frontEnd/FrontEnd_7.png)
 
-## Objectives
-Our objectives are divided into four segments with four different contributor roles:
-
-#### Segment 1:
-* Selected topic
-* Reason why they selected their topic 
-* Description of their data source
-* Questions they hope to answer with the data
-* README.md: Description of the communication protocols
-* At least one branch for each team member
-* Each team member has at least four commits from the duration of the first segment
-* Takes in data in from the provisional database
-* Outputs label(s) for input data
-* Sample data that mimics the expected final database structure or schema
-* Draft machine learning module is connected to the provisional database
-
-#### Segment 2:
-* Description of the data exploration phase of the project
-* Description of the analysis phase of the project
-* Some code necessary to complete the machine learning portion of the project
-* Outline of the project (this may include images, but should be easy to follow and digest)
-* At least one branch for each team member
-* Each team member has at least four commits for the duration of the second segment (eight total commits per person)
-* Description of preliminary data preprocessing
-* Description of preliminary feature engineering and preliminary feature selection, including their decision- making process
-* Description of how data was split into training and testing sets
-* Explanation of model choice, including limitations and benefits
-* Database stores static data for use during the project
-* Database interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model)
-* Includes at least two tables (or collections, if using MongoDB)
-* Includes at least one join using the database language (not including any joins in Pandas)
-* Includes at least one connection string (using SQLAlchemy or PyMongo)
-* Storyboard on Google Slide(s)
-* Description of the tool(s) that will be used to create final dashboard
-* Description of interactive element(s)
-
-#### Segment 3:
-* Technologies, languages, tools, and algorithms used throughout the project
-* All code necessary to perform exploratory analysis
-* Most code necessary to complete the machine learning portion of the project
-* Description of the communication protocols has been removed
-* Cohesive, structured outline of the project (this may include images, but should be easy to follow and digest)
-* Link to Google Slides draft presentation
-* At least one branch for each team member
-* Each team member has at least four commits for the duration of the third segment (12 total commits per person)
-* Description of data preprocessing
-* Description of feature engineering and the feature selection, including their decision- making process
-* Description of how data was split into training and testing sets
-* Explanation of model choice, including limitations and benefits
-* Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)
-* Description of how they have trained the model thus far, and any additional training that will take place
-* Description of current accuracy score
-* Images from the initial analysis
-* Data (images or report) from the machine learning task
-* At least one interactive element
-
-#### Segment 4:
-* Selected topic
-* Reason why they selected their topic
-* Description of their source of data
-* Questions they hope to answer with the data
-* Description of the data exploration phase of the project
-* Description of the analysis phase of the project
-* Technologies, languages, tools, and algorithms used throughout the project ✓ Result of analysis
-* Recommendation for future analysis
-* Anything the team would have done differently
-* Slides are primarily images or graphics (rather than primarily text)
-* Images are clear, in high-definition, and directly illustrative of subject matter
-Live Presentation
-* All team members present in equal proportions
-* The team demonstrates interactivity of dashboard in real time
-* The presentation falls within any time limits provided by instructor ✓ Submission includes speaker notes, flashcards, or a video of the presentation rehearsal
-* All code necessary to perform exploratory analysis
-* All code necessary to complete machine learning portion of project ✓ Any images that have been created (at least three)
-* Requirements.txt file
-* Cohesive, structured outline of the project (this may include images, but should be easy to follow and digest)
-* Link to dashboard (or link to video of dashboard demo)
-* Link to Google Slides presentation
-* At least one branch for each team member
-* Each team member has at least four commits for the duration of the final segment (16 total commits per person)
-* Description of data preprocessing
-* Description of feature engineering and the feature selection, including the team's decision-making process
-* Description of how data was split into training and testing sets
-* Explanation of model choice, including limitations and benefits
-* Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)
-* Description of how model was trained (or retrained, if they are using an existing model)
-* Description and explanation of model’s confusion matrix, including final accuracy score
-
-## Database setup:
-*AWS ADS*
-- Set up RDS instance on AWS, and connect it to PostgreSQL
-
-*Postgres* 
-- Create new server with RDS as the host.
-- Create SQL table and import data in csv format.
-
-*SQLAlchemy*
-- Set up connection with Postgres database.
-- Reads in the table as a Pandas Dataframe.
-
-
-## Segment 2 Roles:
-During Segment 2, we seperated into different roles than what was asked from the rubic. We wanted to do this because our delegation of work fitted better to our workflow:
+## Segment 3 Roles:
+During Segment 3, we seperated into different roles than those suggested by the rubric. We wanted to do this because our delegation of tasks was more conducive to a smooth workflow:
 
 **Davenel Denis:**
-* Managed data cleaning
-* Deployed Neural Net Model
+* Improved Neural Network Model and Random Forest model
 * Google Slides Research + Production
 
 **Jing Jin:**
-* Managed data analysis and EDA
-* Deployed Logistical Regression Model
-* Setup Database Connection
-* Managed Github branches
+* Improved Logistical Regression Model and SVM model
+* Flask app development
 * Google Slides Research + Production
+* Edit README file
 
 **Steven Walk:**
 * Google Slides Research + Production
+* Application content creation
+* Edit README file
 
 **Shaun Wang:**
-* Set up AWS RDS
-* Deployed Random Forest Model
-* Deployed SVC Model
-* Began production of front-end HTML/CSS
-* Managed Github branches
-* Google Slides Research + Production
+* Front-end HTML/CSS development and deployment
+* Flask app development and deployment
+* Managed Github branches and structure
 
 
 
