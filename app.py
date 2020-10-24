@@ -23,9 +23,19 @@ def home():
 def predict():
 
     # takes the user text input
-    userInput = [request.form['text']]
+    userInput = request.form['text']
 
     # clean the text with regex
+    replacements = [
+        (r"(http.*?\s)", " "),
+        (r"[^\w\s]", " "),
+        (r"\_", " "),
+        (r"\d+", " ")]
+
+    for old, new in replacements:
+        userInput = re.sub(old,new, userInput)
+
+    userInput = [userInput]
 
     # vectorize the cleaned text
 
@@ -45,7 +55,6 @@ def predict():
 
     return render_template('index.html',
         prediction_text=f'{output_EI}{output_NS}{output_FT}{output_JP}')
-
 
 if __name__ == "__main__":
     app.run(debug=True)
