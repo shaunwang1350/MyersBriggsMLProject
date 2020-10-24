@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DeepMBTI</title>
+  <meta content="Predict Myers-Briggs through writing" name="descriptison">
+  <meta content="Sklearn, Myers-Briggs, Machine Learning, HTML, CSS, JavaScript, Python" name="keywords">
+
+  <link href="../static/images/favicon-32x32.png" rel="icon">
+  <link href="../static/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link rel= "stylesheet" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">
+  <link rel= "stylesheet" href= "{{ url_for('static',filename='icofont/icofont.min.css') }}">
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}"}>
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo mr-auto"><a href="index.html">DeepMBTI</a></h1>
+    </div>
+  </header>
+
+  <section id="hero" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <h1>Predict Personalities, Just by Sample Writing</h1>
+                    <br>
+                    <h2>Foretell Myers Briggs Personalities from writing samples with AI-powered analytics.</h2>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 ">
+                    <form action="{{ url_for('predict')}}" method="POST">
+                        <textarea name="text" type="text" class="form-control" id="example4" placeholder="Paste a sample of your writing with more than 150 characters..." rows=10 cols=150 minlength="150"></textarea>
+                        <br>
+                        <input type="submit" class="btn btn-get-started scrollto" value="Predict">
+                    </form>
+                </div>
+            </div>
+        </div>
+  </section>
+  
+  <section id="output" class="d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pt-5 pt-lg-0 d-flex flex-column justify-content-center">
+                <h3><b>So what's your MBTI?</b></h3>
+                <h3>Your personality type is: </h3>
+                <h4 class=outputUser style="font-size: 50px;"><b></b>{{ prediction_text }}</b></h3>
+            </div>
+            <div class="col-lg-6">
+              <img src="../static/images/pixel-cells-3702061_1280.png" class="img-fluid" alt="">
+          </div>
+        </div>
+    </div>
+  </section>
+  <br><br><br><br><br><br>
+   <section id="about" class="about" style="margin-top: 50px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="../static/images/pixel-cells-3947913_960_720.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 content">
+                    <h3><b>What is Myers-Briggs Personality Indicators?</b></h3>
+                    <br>
+                    <p>
+                        Myers-Briggs Type Indicator (MBTI) is one of the most prevalent personality tests in the world. Its purpose is to categorize psychological profiles based on the assumption that variations in everyday behavior are ordered, consistent, and capable of being categorized.
+                    </p>
+                    <p>
+                        Keep in mind that while MBTI resembles some psychological theories, it is classified as a pseudoscience and is not suppose to be predictive. As the DeepMBTI team, we wanted to bring together something fun and social to you through AI analytics.
+                    </p>
+                </div>
+            </div>
+        </div>
+  </section><!-- End About Section -->
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container">
+        
+        <div class="section-title">
+            <span>MBTI Dimensions</span>
+            <h2>MBTI Dimensions</h2>
+            <p>MBTI contains 4 different dimensions: Extraversion(E), Introversion(I), Sensing(S), Intuition(N), Thinking(T), Feeling(F), Juding(J), Perception(P). These 8 factors comes together to form 4 binary dimensions and 16 different personalities.</p>
+        </div>
+  
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-users-social"></i></div>
+              <h4 class="title"><a href="">Extraversion vs Introversion</a></h4>
+              <p class="description">What is your orientation, or “attitude,” towards interacting with the world? An extrovert’s primary focus is outward, towards people, objects, and action. An introvert is drawn towards self-reflection, thought, and ideas. Note that it differs slightly from the lay usage of the terms.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-listening"></i></div>
+              <h4 class="title"><a href="">Sensing vs Intuition</a></h4>
+              <p class="description">How do you learn about the world around you? Intuition refers to acquiring and assimilating information not by using concrete methods but following patterns and hunches (“going with your gut”). Sensing is gathering tangible facts (data) through the five senses.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-heart"></i></div>
+              <h4 class="title"><a href="">Thinking vs Feeling</a></h4>
+              <p class="description">How do you make decisions? Thinkers try to detach themselves from situations and make judgments based on logical reasoning. Feelers put themselves in others’ shoes, seeking to make decisions “from the inside.”</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-eye"></i></div>
+              <h4 class="title"><a href="">Judging vs Perceiving</a></h4>
+              <p class="description">What is your orientation towards the unknown? Judgment oriented people prefer their world to be structured and their activities to be planned in detail. Perception oriented people are more comfortable with spontaneity, “playing it by ear,” and letting their activities come together naturally.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+       <!-- ======= About Section ======= -->
+   <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pt-4 content">
+                    <h3><b>What is Different about DeepMBTI?</b></h3>
+                    <br>
+                    <p>
+                      Currently, MBTI is tested with an online survey. The voluntary and conscious nature of the quiz subjects the system to an unrepresentative sample of test takers. Subjects are likely to have a strong interest in the psychology of personality, as well as answer questions with the testing system in mind. Statisticians refer to this confounding variable as voluntary response bias. MBTI’s susceptibility to bias decreases the test’s predictive validity.
+                    </p>
+                    <p>
+                      Our method eliminates this bias by putting the machine, not the subject, in the driver’s seat. The user puts a passage they wrote prior to using the model into a text interpreter, obviating the risk of this bias.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../static/images/pixel-cells-3974186_960_720.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+        <div class="text-center">
+          <img src="../static/images/pixel-cells-3947909_1280.png" class="img-fluid" alt="" width="400">
+          <h3>Open-Source</h3>
+          <p>We believe that open source is good for everyone. By being publicly accessible, it helps and promotes collaboration and technology creation, solving problems in the real world.</p>
+          <a class="cta-btn" href="https://github.com/shaunwang1350/MyersBriggsMLProject">Source Code</a>
+        </div>
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Our Team</span>
+          <h2>Our Team</h2>
+          <p>Feel free to connect with our creative team</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member">
+                <img src="../static/images/davenel_denis.jpg" alt="">
+                <h4>Davenel Denis</h4>
+                <span>Team Member</span>
+                <p>
+                  Davenel Denis is a marketing executive. He advises high profile corporate clients in the C-suite and beyond, providing analysis of market conditions, identifying opportunities for innovation, and capturing the zeitgeist in consumer preferences.
+                </p>
+                <div class="social">
+                    <a href="https://github.com/daveneldenis"><i class="icofont-github"></i></a>
+                    <a href="https://www.linkedin.com/in/daveneldenis/"><i class="icofont-linkedin"></i></a>
+                </div>
+                </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member">
+                <img src="../static/images/jing_jin.jpg" alt="">
+                <h4>Jing Jin</h4>
+                <span>Team Member</span>
+                <p>
+                  Jing Jin is a product development manager at a software firm. Her eclectic background as a researcher in the ivory towers of academia and a quantitative analyst in the boardrooms of high finance gives her a unique perspective that she applies in business.
+                </p>
+                <div class="social">
+                        <a href="https://github.com/jjin92"><i class="icofont-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jing-jin-7b509b5a/"><i class="icofont-linkedin"></i></a>
+                </div>
+                </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="member">
+                <img src="../static/images/steven_walk.png" alt="">
+                <h4>Steven Walk</h4>
+                <span>Team Member</span>
+                <p>
+                  Steven Walk supervises security at a luxury fashion company’s corporate headquarters. A numbers nerd at heart, he intends to transition into a quantitative role in 2021.
+                </p>
+                <div class="social">
+                        <a href="https://github.com/realStevenWalk"><i class="icofont-github"></i></a>
+                        <a href="https://www.linkedin.com/in/steven-walk/"><i class="icofont-linkedin"></i></a>
+                </div>
+                </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+            <img src="../static/images/ShaunW.jpeg" alt="">
+            <h4>Shaun Wang</h4>
+            <span>Team Member</span>
+            <p>
+              Shaun Wang is a master’s student in philosophy at Columbia University. He currently works as a Research Assistant at Columbia on Computer Vision and as an Analytics & Research Consultant at Oxo Group. Shaun hopes to intersect his Data Science skillset with his Humanities background.
+            </p>
+            <div class="social">
+                    <a href="https://github.com/shaunwang1350"><i class="icofont-github"></i></a>
+                    <a href="https://www.linkedin.com/in/wang-shaun/"><i class="icofont-linkedin"></i></a>
+            </div>
+            </div>
+      </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+        <div class="footer-top">
+        <div class="container">
+            <div class="row  justify-content-center">
+            <div class="col-lg-6">
+                <h3>DeepMBTI</h3>
+                <p>This machine learning project is a culmination from the Columbia Data Analytics and Visualuation Bootcamp, a rigorous 24-week program led by Prof. Dev Sharma. Dev and his teaching assistants led a class of twenty students through a curriculum of technical tools on Data Science and Analytics. Dev and the TA’s were invaluable in our growth as data analysts.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+        <div class="copyright">
+            &copy; Copyright <strong><span>DeepMBTI</span></strong>. All Rights Reserved
+        </div>
+    
+        </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+
+  <script src="{{ url_for('static', filename='main.js') }}" ></script>
+</body>
+</html>
