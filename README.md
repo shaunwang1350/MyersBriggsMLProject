@@ -164,52 +164,31 @@ We want to let users try the model themselves by entering an example of their wr
 During Segment 3, we seperated into different roles than those suggested by the rubric. We wanted to do this because our delegation of tasks was more conducive to a smooth workflow:
 
 **Davenel Denis:**
-* Improved Neural Network Model and Random Forest model
-* Google Slides Research + Production
+- Developed Neural Net model
+- Updated Random Forest model with Resampling
+- Edited model comparison chart
+- Edited Slides
 
 **Jing Jin:**
-* Improved Logistical Regression Model and SVM model
-* Flask app development
-* Google Slides Research + Production
-* Edit README file
+- Improved Logistical Regression Model and SVM model with resampling
+- Compile the master notebook codes
+- Flask app setup, regex, model weights export and import
+- Edited Slides, model comparison chart
+- Managed Readme
+- Managed Github branches
 
 **Steven Walk:**
-* Google Slides Research + Production
-* Application content creation
-* Edit README file
+- Edited Slides
+- Application content creation
+- Proofread Readme
 
 **Shaun Wang:**
-* Front-end HTML/CSS development and deployment
-* Flask app development and deployment
-* Managed Github branches and structure
+- Front-end HTML/CSS design, development and deployment
+- Flask app development and deployment
+- Managed Github branches / folder structures
+- Added resources to Slides
+- Managed Readme
 
-## Segment 3 Roles:
-During Segment 3, we seperated into different roles than what was asked from the rubic. We wanted to do this because our delegation of work fitted better to our workflow:
 
-**Davenel Denis:**
-* Developed Neural Net model
-* Updated Random Forest model with Resampling
-* Edited model comparison chart
-* Edited Slides
-
-**Jing Jin:**
-* Edited model comparison chart
-* Added Regex and additional model weights to app.py
-* Edited Slides
-* Managed Readme
-* Managed Github branches
-* Edited Slides 
-
-**Steven Walk:**
-* Edited Slides
-* Proofread Readme
-* Created marketing material
-
-**Shaun Wang:**
-* Developed and finalizedfront-end index.html through HTML/CSS/Flask
-* Developed app.py
-* Managed Readme
-* Managed Github branches / folder structures
-* Added resources to slides
 
 
