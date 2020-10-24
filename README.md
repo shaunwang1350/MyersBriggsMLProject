@@ -36,6 +36,11 @@ This data was collected through the PersonalityCafe forum, as it provides a larg
     - Use of stop words, punctuation (count)
 - Create a Machine Learning model that is able to predict the personality type based on the writing input
 
+![classImbalance](/Resources/mdImages/analysis/class_imbalance.PNG)
+![features](/Resources/mdImages/analysis/features.PNG)
+![typeCorr](/Resources/mdImages/analysis/type_corr.png)
+![typeCount](/Resources/mdImages/analysis/type_count.png)
+
 ## Machine Leaning Model
 *1. Which models*
 - We tried five different models, Logistics Regression, Neural Network, Random Forest, Linear SVC, LinearSVC with KBInsDiscretizer.
@@ -54,6 +59,34 @@ This data was collected through the PersonalityCafe forum, as it provides a larg
     - "T-F"
     - "J-P"
 
+![appFlowChart](/Resources/mdImages/app_workflow.PNG)
+
+## Communication Protocol
+Our main media of communication are currently: 
+1.    Slack (Standard Communication)
+2.    Zoom (Meetings)
+3.    Individual phone numbers (Emergencies)
+- As our primary medium of communication, we will use Slack, where we will communicate our day-to-day logistics.
+- Our bi-weekly meetings, usually after 6PM ET, are organized through individual Zoom calls. This is where we will get connected, see everyone’s progress, and plan work for the upcoming few days.
+- In case of emergency, we will call or text one another, depending on the urgency of the situation.
+
+## Technologies Used
+* PostgreSQL
+* Python (Pandas)
+* Sklearn
+* Bootstrap
+* Flask
+* JavaScript
+* HTML/CSS
+
+## Product MVP
+![FontEnd1](/Resources/mdImages/frontEnd/FrontEnd_1.png)
+![FontEnd2](/Resources/mdImages/frontEnd/FrontEnd_2.png)
+![FontEnd3](/Resources/mdImages/frontEnd/FrontEnd_3.png)
+![FontEnd4](/Resources/mdImages/frontEnd/FrontEnd_4.png)
+![FontEnd5](/Resources/mdImages/frontEnd/FrontEnd_5.png)
+![FontEnd6](/Resources/mdImages/frontEnd/FrontEnd_6.png)
+![FontEnd7](/Resources/mdImages/frontEnd/FrontEnd_7.png)
 
 ## Objectives
 Our objectives are divided into four segments with four different contributor roles:
@@ -143,24 +176,6 @@ Live Presentation
 * Description of how model was trained (or retrained, if they are using an existing model)
 * Description and explanation of model’s confusion matrix, including final accuracy score
 
-## Communication Protocol
-Our main media of communication are currently: 
-1.    Slack (Standard Communication)
-2.    Zoom (Meetings)
-3.    Individual phone numbers (Emergencies)
-- As our primary medium of communication, we will use Slack, where we will communicate our day-to-day logistics.
-- Our bi-weekly meetings, usually after 6PM ET, are organized through individual Zoom calls. This is where we will get connected, see everyone’s progress, and plan work for the upcoming few days.
-- In case of emergency, we will call or text one another, depending on the urgency of the situation.
-
-## Technologies Used
-* PostgreSQL
-* Python (Pandas)
-* Sklearn
-* Bootstrap
-* Flask
-* JavaScript
-* HTML/CSS
-
 ## Database setup:
 *AWS ADS*
 - Set up RDS instance on AWS, and connect it to PostgreSQL
@@ -200,19 +215,6 @@ During Segment 2, we seperated into different roles than what was asked from the
 * Managed Github branches
 * Google Slides Research + Production
 
-![FontEnd1](/Resources/mdImages/frontEnd/FrontEnd_1.png)
-![FontEnd2](/Resources/mdImages/frontEnd/FrontEnd_2.png)
-![FontEnd3](/Resources/mdImages/frontEnd/FrontEnd_3.png)
-![FontEnd4](/Resources/mdImages/frontEnd/FrontEnd_4.png)
-![FontEnd5](/Resources/mdImages/frontEnd/FrontEnd_5.png)
-![FontEnd6](/Resources/mdImages/frontEnd/FrontEnd_6.png)
-![FontEnd7](/Resources/mdImages/frontEnd/FrontEnd_7.png)
 
-![classImbalance](/Resources/mdImages/analysis/class_imbalance.PNG)
-![features](/Resources/mdImages/analysis/features.PNG)
-![typeCorr](/Resources/mdImages/analysis/type_corr.png)
-![typeCount](/Resources/mdImages/analysis/type_count.png)
-
-![appFlowChart](/Resources/mdImages/app_workflow.PNG)
 
 
