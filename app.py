@@ -25,6 +25,9 @@ def predict():
     # takes the user text input
     userInput = request.form['text']
 
+    if len(userInput) == 0:
+        return render_template('index.html', prediction_text=f"")
+
     # clean the text with regex
     replacements = [
         (r"(http.*?\s)", " "),

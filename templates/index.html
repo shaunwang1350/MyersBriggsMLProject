@@ -6,20 +6,15 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>DeepMBTI</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+  <meta content="Predict Myers-Briggs through writing" name="descriptison">
+  <meta content="Sklearn, Myers-Briggs, Machine Learning, HTML, CSS, JavaScript, Python" name="keywords">
 
-  <!-- Fix -->
   <link href="../static/images/favicon-32x32.png" rel="icon">
   <link href="../static/images/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
   <link rel= "stylesheet" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">
   <link rel= "stylesheet" href= "{{ url_for('static',filename='icofont/icofont.min.css') }}">
 
-  <!-- Template Main CSS File -->
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}"}>
 </head>
 
@@ -27,23 +22,21 @@
 
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-
       <h1 class="logo mr-auto"><a href="index.html">DeepMBTI</a></h1>
-
     </div>
-  </header><!-- End Header -->
+  </header>
 
   <section id="hero" class="d-flex align-items-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h1>Predict Personalities, Just by Typing</h1>
+                    <h1>Predict Personalities, Just by Sample Writing</h1>
                     <br>
-                    <h2>Foretell Myers Briggs Personalities from writing with AI-powered analytics.</h2>
+                    <h2>Foretell Myers Briggs Personalities from writing samples with AI-powered analytics.</h2>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 ">
                     <form action="{{ url_for('predict')}}" method="POST">
-                        <textarea name="text" type="text" class="form-control" id="example4" placeholder="Describe yourself with more than 150 characters..." rows=10 cols=150 minlength="150"></textarea>
+                        <textarea name="text" type="text" class="form-control" id="example4" placeholder="Paste a sample of your writing with more than 150 characters..." rows=10 cols=150 minlength="150"></textarea>
                         <br>
                         <input type="submit" class="btn btn-get-started scrollto" value="Predict">
                     </form>
@@ -51,7 +44,7 @@
             </div>
         </div>
   </section>
-
+  
   <section id="output" class="d-flex align-items-center">
     <div class="container">
         <div class="row">
@@ -66,10 +59,8 @@
         </div>
     </div>
   </section>
-
-
-   <!-- ======= About Section ======= -->
-   <section id="about" class="about">
+  <br><br><br><br><br><br>
+   <section id="about" class="about" style="margin-top: 50px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -96,7 +87,7 @@
         <div class="section-title">
             <span>MBTI Dimensions</span>
             <h2>MBTI Dimensions</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto perspiciatis deserunt impedit. Exercitationem vitae qui natus accusamus, alias, eos error quos cum blanditiis debitis consectetur corporis, facilis minus beatae.</p>
+            <p>MBTI contains 4 different dimensions: Extraversion(E), Introversion(I), Sensing(S), Intuition(N), Thinking(T), Feeling(F), Juding(J), Perception(P). These 8 factors comes together to form 4 binary dimensions and 16 different personalities.</p>
         </div>
   
         <div class="row">
