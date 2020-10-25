@@ -5,7 +5,7 @@
 
 ## Presentation
 * The PowerPoint contains a more detailed discussion of the trials and errors of the machine learning models.
-* This file can be accessed [here](https://github.com/shaunwang1350/MyersBriggsMLProject/blob/master/MyersBriggsProject.pptx).
+* This file can be accessed [here](https://docs.google.com/presentation/d/1YATOfX2lsJnDj15BejmGqwXvXYVGnL30jpCSBRJUk5c/edit?usp=sharing).
 
 ## Topic and Background
 Personality
