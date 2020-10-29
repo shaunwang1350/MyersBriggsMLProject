@@ -11,7 +11,7 @@
 
 ## Demo: 
 
-![demo](https://youtu.be/g5q-EGc95Cc)
+[![demo](/Resources/mdImages/demoVidThumb.png)](https://youtu.be/g5q-EGc95Cc)
 
 ## Topic and Background
 Personality
@@ -157,35 +157,6 @@ We want to let users try the model themselves by entering an example of their wr
 - HTML
     - At the text box section, we included `<form action="{{ url_for('predict')}}" method="POST">` so it can be called from Flask.
     - In the result section, we included `{{ prediction_text }}` so the prediction result can be reflected.
-
-## Segment 3 Roles:
-During Segment 3, we seperated into different roles than those suggested by the rubric. We wanted to do this because our delegation of tasks was more conducive to a smooth workflow:
-
-**Davenel Denis:**
-- Developed Neural Net model
-- Updated Random Forest model with Resampling
-- Edited model comparison chart
-- Edited Slides
-
-**Jing Jin:**
-- Improved Logistical Regression Model and SVM model with resampling
-- Compile the master notebook codes
-- Flask app setup, regex, model weights export and import
-- Edited Slides, model comparison chart
-- Managed Readme
-- Managed Github branches
-
-**Steven Walk:**
-- Edited Slides
-- Application content creation
-- Proofread Readme
-
-**Shaun Wang:**
-- Front-end HTML/CSS design, development and deployment
-- Flask app development and deployment
-- Managed Github branches / folder structures
-- Added resources to Slides
-- Managed Readme
 
 
 
