@@ -1,4 +1,4 @@
-[!title](/Resources/mdImages/mdTitle2.png)
+![title](/Resources/mdImages/mdTitle2.png)
 
 **DeepMBTI: Predict Personalities, Just by Sample Writing**
 
