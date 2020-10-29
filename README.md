@@ -8,6 +8,10 @@ DeepMBTI: Predict Personalities, Just by Sample Writing
 * The PowerPoint contains a more detailed discussion of the trials and errors of the machine learning models.
 * This file can be accessed [here](https://docs.google.com/presentation/d/1YATOfX2lsJnDj15BejmGqwXvXYVGnL30jpCSBRJUk5c/edit?usp=sharing).
 
+## Demo: 
+
+![title](/Resources/demoVid.mov)
+
 ## Topic and Background
 Personality
 
@@ -135,7 +139,7 @@ We want to let users try the model themselves by entering an example of their wr
 **3. The Back-end**
 - Workflow
 
-![appFlowChart](/Resources/mdImages/app_workflow.PNG)
+![appFlowChart](/Resources/mdImages/app_workflow.png)
 
 - Model weights and other variables
     - After running the logistics regression model, we used `pickle` to save the weights of our four models.
@@ -152,15 +156,6 @@ We want to let users try the model themselves by entering an example of their wr
 - HTML
     - At the text box section, we included `<form action="{{ url_for('predict')}}" method="POST">` so it can be called from Flask.
     - In the result section, we included `{{ prediction_text }}` so the prediction result can be reflected.
-
-**4. A Preview**
-![FontEnd1](/Resources/mdImages/frontEnd/FrontEnd_1.png)
-![FontEnd2](/Resources/mdImages/frontEnd/FrontEnd_2.png)
-![FontEnd3](/Resources/mdImages/frontEnd/FrontEnd_3.png)
-![FontEnd4](/Resources/mdImages/frontEnd/FrontEnd_4.png)
-![FontEnd5](/Resources/mdImages/frontEnd/FrontEnd_5.png)
-![FontEnd6](/Resources/mdImages/frontEnd/FrontEnd_6.png)
-![FontEnd7](/Resources/mdImages/frontEnd/FrontEnd_7.png)
 
 ## Segment 3 Roles:
 During Segment 3, we seperated into different roles than those suggested by the rubric. We wanted to do this because our delegation of tasks was more conducive to a smooth workflow:
@@ -190,6 +185,7 @@ During Segment 3, we seperated into different roles than those suggested by the 
 - Managed Github branches / folder structures
 - Added resources to Slides
 - Managed Readme
+
 
 
 
