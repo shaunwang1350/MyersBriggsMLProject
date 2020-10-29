@@ -1,8 +1,8 @@
-[title](/Resources/mdImages/mdTitle2.png)
+![title](/Resources/mdImages/mdTitle2.png)
 
 **DeepMBTI: Predict Personalities, Just by Sample Writing**
 
-[[All Contributors](https://img.shields.io/badge/contributors-4-green.svg?style=flat-square)](#contributors-) ![Developement](https://img.shields.io/badge/progress-complete-green)
+![[All Contributors](https://img.shields.io/badge/contributors-4-green.svg?style=flat-square)](#contributors-) ![Developement](https://img.shields.io/badge/progress-complete-green)
 
 
 ## Presentation
@@ -11,7 +11,7 @@
 
 ## Demo: 
 
-[[Youtube](/Resources/mdImages/demoVidThumb.png)](https://www.youtube.com/watch?v=g5q-EGc95Cc&feature=youtu.be&ab_channel=ShaunWang)
+![[Youtube](/Resources/mdImages/demoVidThumb.png)](https://www.youtube.com/watch?v=g5q-EGc95Cc&feature=youtu.be&ab_channel=ShaunWang)
 
 ## Topic and Background
 Personality
