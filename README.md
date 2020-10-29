@@ -14,7 +14,6 @@
 [![demo](/Resources/mdImages/demoVidThumb.png)](https://www.youtube.com/watch?v=g5q-EGc95Cc&feature=youtu.be&ab_channel=ShaunWang)
 
 ## Topic and Background
-Personality
 
 **Reasons why we selected our topic:**
 
@@ -154,6 +153,8 @@ We want to let users try the model themselves by entering an example of their wr
     - Input the features into four models and get predicted results for four dimensions.
     - Convert 1 & 0 binary results to corresponding personality type letters.
     - Output the four dimensions back to the frontend in the result section.
+
+![codeSnip](/Resources/mdImages/backEnd.png)
 - HTML
     - At the text box section, we included `<form action="{{ url_for('predict')}}" method="POST">` so it can be called from Flask.
     - In the result section, we included `{{ prediction_text }}` so the prediction result can be reflected.
