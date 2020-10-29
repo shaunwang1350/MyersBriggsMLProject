@@ -11,7 +11,7 @@
 
 ## Demo: 
 
-[![demo](/Resources/mdImages/demoVidThumb.png)](https://youtu.be/g5q-EGc95Cc)
+[!Youtube](https://www.youtube.com/watch?v=g5q-EGc95Cc&feature=youtu.be&ab_channel=ShaunWang)
 
 ## Topic and Background
 Personality
