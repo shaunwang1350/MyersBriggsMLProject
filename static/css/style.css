@@ -1,15 +1,24 @@
+/**
+* Template Name: eNno - v2.1.0
+* Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
 
 a {
-  color: rgb(194, 172, 139);
+  color: rgb(90, 180, 200);
 }
 
 a:hover {
-  color: rgb(223, 173, 99);
+  color: rgb(90, 180, 200);
   text-decoration: none;
 }
 
@@ -36,13 +45,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background:  rgb(194, 172, 139);
+  background:  rgb(90, 180, 200);
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: rgb(223, 173, 99);
+  background: rgb(90, 180, 200);
   color: #fff;
 }
 
@@ -56,6 +65,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0;
 }
 
+#header.header-scrolled {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 12px 0;
+}
+
 #header .logo {
   font-size: 32px;
   margin: 0;
@@ -66,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo a {
-  color: rgb(214, 185, 142);
+  color: rgb(90, 180, 200);
 }
 
 #header .logo img {
@@ -105,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 .get-started-btn {
   margin-left: 25px;
   background: #fff;
-  color: #5f687b;
+  color: rgb(90, 180, 200);
   border-radius: 4px;
   padding: 8px 25px;
   white-space: nowrap;
@@ -116,9 +130,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .get-started-btn:hover {
-  background: rgb(223, 173, 99);
+  background: rgb(90, 180, 200);
   color: #fff;
-  border-color: rgb(223, 173, 99);
+  border-color: rgb(90, 180, 200);
 }
 
 @media (max-width: 768px) {
@@ -180,7 +194,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color:  rgb(228, 197, 151);
+  color:  rgb(90, 180, 200);
   text-decoration: none;
 }
 
@@ -240,10 +254,10 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   background: #fff;
-  padding-top: 100px;
-  /* padding-bottom: 50px !important; */
+  padding-top: 82px;
+  padding-bottom: 50px !important;
 }
 
 #hero h1 {
@@ -270,12 +284,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: rgb(228, 197, 151);
-  box-shadow: 0 8px 28px rgba(214, 197, 172, 0.45);
+  background: rgb(90, 180, 200);
+  box-shadow: 0 8px 28px rgba(90, 180, 200, 0.45);
 }
 
 #hero .btn-get-started:hover {
-  background: rgb(223, 173, 99);
+  background: rgb(90, 180, 200);
   box-shadow: 0 8px 28px rgba(136, 105, 60, 0.45);
 }
 
@@ -339,7 +353,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  /* padding: 90px 0; */
+  padding: 90px 0;
   overflow: hidden;
 }
 
@@ -392,6 +406,8 @@ section {
     font-size: 38px;
   }
 }
+
+
 /*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
@@ -419,7 +435,7 @@ section {
 }
 
 .featured-services .icon i {
-  color:  rgb(228, 197, 151);
+  color:  rgb(90, 180, 200);
   font-size: 36px;
 }
 
@@ -439,7 +455,7 @@ section {
 }
 
 .featured-services .icon-box:hover .title a {
-  color:  rgb(228, 197, 151);
+  color:  rgb(90, 180, 200);
 }
 
 .featured-services .description {
@@ -451,7 +467,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background:  rgb(228, 197, 151);
+  background:  rgb(110, 198, 218);
   background-size: cover;
   padding: 100px 0;
   margin-top: 100px;;
@@ -485,8 +501,8 @@ section {
 }
 
 .cta .cta-btn:hover {
-  background: rgb(223, 173, 99);
-  border-color: rgb(223, 173, 99);
+  background: rgb(90, 180, 200);
+  border-color: rgb(90, 180, 200);
 }
 
 /*--------------------------------------------------------------
@@ -533,7 +549,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color:  rgb(228, 197, 151);
+  color:  rgb(90, 180, 200);
 }
 
 .team .member .social i {
@@ -545,8 +561,8 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid  rgb(228, 197, 151);
-  border-bottom: 3px solid  rgb(228, 197, 151);
+  border-top: 3px solid  rgb(90, 180, 200);
+  border-bottom: 3px solid  rgb(90, 180, 200);
   padding: 30px;
   width: 100%;
   background-color: #f9f9fa;
@@ -554,7 +570,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color:  rgb(228, 197, 151);
+  color:  rgb(90, 180, 200);
   float: left;
   width: 44px;
   height: 44px;
@@ -601,19 +617,19 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background:  rgb(228, 197, 151);
+  background:  rgb(90, 180, 200);
   color: #fff;
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background:  rgb(228, 197, 151);
+  background:  rgb(90, 180, 200);
   color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid  rgb(228, 197, 151);
-  border-bottom: 3px solid  rgb(228, 197, 151);
+  border-top: 3px solid  rgb(90, 180, 200);
+  border-bottom: 3px solid  rgb(90, 180, 200);
   padding: 30px;
   background-color: #f9f9fa;
 }
@@ -680,7 +696,7 @@ section {
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color:  rgb(228, 197, 151);
+  border-color:  rgb(90, 180, 200);
 }
 
 .contact .php-email-form input {
@@ -692,7 +708,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background:  rgb(228, 197, 151);
+  background:  rgb(90, 180, 200);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -701,7 +717,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: rgb(223, 173, 99);
+  background: rgb(90, 180, 200);
 }
 
 @-webkit-keyframes animate-loading {
@@ -802,7 +818,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color:  rgb(228, 197, 151) !important;
+  background-color:  rgb(90, 180, 200) !important;
 }
 
 .portfolio-details .portfolio-info {
@@ -922,7 +938,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background:  rgb(228, 197, 151);
+  background:  rgb(90, 180, 200);
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -930,7 +946,7 @@ section {
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: rgb(223, 173, 99);
+  background: rgb(90, 180, 200);
 }
 
 #footer .footer-top .social-links {
@@ -953,7 +969,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background:  rgb(228, 197, 151);
+  background:  rgb(90, 180, 200);
   color: #fff;
   text-decoration: none;
 }

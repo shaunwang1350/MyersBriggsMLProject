@@ -1,5 +1,5 @@
-# DeepMBTI 
-Myers-Briggs Machine Learning Project
+![title](/Resources/mdImages/mdTitle.png)
+DeepMBTI: Predict Personalities, Just by Sample Writing
 
 [![All Contributors](https://img.shields.io/badge/contributors-4-green.svg?style=flat-square)](#contributors-) ![Developement](https://img.shields.io/badge/progress-in%20development-orange)
 
