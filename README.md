@@ -2,7 +2,7 @@
 
 **DeepMBTI: Predict Personalities, Just by Sample Writing**
 
-[![All Contributors](https://img.shields.io/badge/contributors-4-green.svg?style=flat-square)](#contributors-) ![Developement](https://img.shields.io/badge/progress-complete-green)
+![[All Contributors](https://img.shields.io/badge/contributors-4-green.svg?style=flat-square)](#contributors-) ![Developement](https://img.shields.io/badge/progress-complete-green)
 
 
 ## Presentation
