@@ -7,7 +7,7 @@
 
 ## Presentation
 * The PowerPoint contains a more detailed discussion of the trials and errors of the machine learning models.
-* This file can be accessed [here](https://docs.google.com/presentation/d/1k8EJ2QjWDDRVAvyqtfrXNY97UdiPusOJ8cjnyFdsfmk/edit#slide=id.ga3c5c9903b_0_2304).
+* This file can be accessed [here](https://docs.google.com/presentation/d/1k8EJ2QjWDDRVAvyqtfrXNY97UdiPusOJ8cjnyFdsfmk/edit?usp=sharing).
 
 ## Demo: 
 
