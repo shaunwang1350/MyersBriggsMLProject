@@ -11,7 +11,7 @@
 
 ## Demo: 
 
-[[Youtube]((/Resources/mdImages/demoVidThumb.png))](https://www.youtube.com/watch?v=g5q-EGc95Cc&feature=youtu.be&ab_channel=ShaunWang)
+[[Youtube](/Resources/mdImages/demoVidThumb.png)](https://www.youtube.com/watch?v=g5q-EGc95Cc&feature=youtu.be&ab_channel=ShaunWang)
 
 ## Topic and Background
 Personality
@@ -140,7 +140,7 @@ We want to let users try the model themselves by entering an example of their wr
 **3. The Back-end**
 - Workflow
 
-[appFlowChart](/Resources/mdImages/app_workflow.png)
+![workChart](/Resources/mdImages/app_workflow.png)
 
 - Model weights and other variables
     - After running the logistics regression model, we used `pickle` to save the weights of our four models.
