@@ -1,4 +1,5 @@
-# Myers-Briggs Machine Learning Project
+# DeepMBTI 
+Myers-Briggs Machine Learning Project
 
 [![All Contributors](https://img.shields.io/badge/contributors-4-green.svg?style=flat-square)](#contributors-) ![Developement](https://img.shields.io/badge/progress-in%20development-orange)
 
