@@ -11,7 +11,7 @@
 
 ## Demo: 
 
-![demo](/Resources/demoVid.mov)
+![demo](https://youtu.be/g5q-EGc95Cc)
 
 ## Topic and Background
 Personality
