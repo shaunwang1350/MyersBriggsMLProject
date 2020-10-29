@@ -140,7 +140,7 @@ We want to let users try the model themselves by entering an example of their wr
 **3. The Back-end**
 - Workflow
 
-![workChart](/Resources/mdImages/app_workflow.png)
+![workChart](/Resources/mdImages/app_workflow.PNG)
 
 - Model weights and other variables
     - After running the logistics regression model, we used `pickle` to save the weights of our four models.
