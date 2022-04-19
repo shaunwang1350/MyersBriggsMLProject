@@ -8,7 +8,6 @@
 ## Presentation
 * The PowerPoint pitch deck contains a comprehensive discussion of the trials and errors of the machine learning models and the development of this project.
 * This file can be accessed [here](https://docs.google.com/presentation/d/1k8EJ2QjWDDRVAvyqtfrXNY97UdiPusOJ8cjnyFdsfmk/edit?usp=sharing).
-* A recording of the presentation can be accessed [here](https://github.com/shaunwang1350/MyersBriggsMLProject/blob/master/Resources/presentation_video/DeepMBTI_presentation.mp4)
 
 ## Demo: 
 
