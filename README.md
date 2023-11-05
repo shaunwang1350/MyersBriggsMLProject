@@ -70,7 +70,7 @@ This data was collected from the PersonalityCafe forum, as it provides a large s
 
 ![typeCount](/Resources/mdImages/analysis/type_count.png)
 
-**2. Are each dimensions balanced?**
+**2. Is each dimension balanced?**
 - Comparing the sample sizes within each of the four axes, we can see that the E-I and N-S axes have extremely imbalanced sample sizes.
 
 ![classImbalance](/Resources/mdImages/analysis/class_imbalance.PNG)
